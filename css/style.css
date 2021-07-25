@@ -163,6 +163,23 @@ a:active {
     cursor: pointer;
 }
 
+.btn-contact-details{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    transition: all .5s ease-in-out;
+}
+.btn-contact-details:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #2196f3;
+}
+.btn-contact-details:focus{
+    outline: 0px;
+}
 /*==================================================
                   SECTION (Generic)
 ====================================================*/
@@ -210,16 +227,58 @@ a:active {
 /*==================================================
                       ABOUT
 ====================================================*/
-  #about {
-      background-image: url(../img/profile-banner.jpg); 
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-  }
+#about {
+    background-image: url(../img/melfordbirakor-banner.jpg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    margin: 0 11rem 0 11rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    cursor: pointer;
+    padding: 12px;
+}
+.far, .fab{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.fab:hover{
+    color: #2196f3;
+}
 
-  #about h1 {
-    /*font-size: 100%;*/
-  }
+#my-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.name{
+    color: #fff;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.last-item:last-child{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.subheading,
+.description {
+    color: #fff;
+}
+/* .web-product{
+    color: #2196f3;
+} */
 
 /*==================================================
                     EXPERIENCE
@@ -393,7 +452,7 @@ a:active {
     .portfolio-modal .close-modal{
         display: none;
     }
-}  
+}   
 
 /*====================================================
                       SKILLS

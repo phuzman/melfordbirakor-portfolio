@@ -1,13 +1,5 @@
-<!--
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,13 +7,13 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <meta name="author" content="">
 
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Profile Bootstrap Theme</title>
+    <title>Melford Birakor</title>
 
     <!-- Global stylesheets -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -33,7 +25,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/my-profile.jpg" alt="Melford Birakor">
         </span>
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,50 +61,56 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         ABOUT
     ======================================================-->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-          <div class="my-auto" >
-              <img src="img/logo-s.png" class="img-fluid mb-3" alt="">
-              <h1 class="mb-0">Johndon
-                <span class="text-primary">Bonsen</span>
+          <div id="overlay">
+          <div class="my-info" >
+              <h1 class="mb-0 name">Melford
+                <span class="text-primary">Birakor</span>
               </h1>
-              <div class="subheading mb-5">THE NEXT BIG IDEA IS WAITING FOR ITS NEXT BIG CHANGER WITH 
-                  <a href="#">THEMSBIT</a>
+              <div class="subheading mb-5">Developing
+                  <span class="web-product">web and application products</span>
               </div>
-              <p class="mb-5" style="max-width: 500px;" >I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+              <p class="mb-5 description" style="max-width: 500px;" >An experienced frontend developer 
+                who provides quality designs that are SEO optimized.</p>
               <ul class="list-inline list-social-icons mb-0">
                   <li class="list-inline-item">
                       <a href="#">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-github"></i>
                   </span>
                 </a>
                   </li>
                   <li class="list-inline-item">
                       <a href="#">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-twitter"></i>
                   </span>
                 </a>
                   </li>
                   <li class="list-inline-item">
                       <a href="#">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-linkedin-in"></i>
                   </span>
                 </a>
                   </li>
                   <li class="list-inline-item">
                       <a href="#">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-whatsapp"></i>
                   </span>
                 </a>
+                  </li>
+                  <li class="list-inline-item last-item">
+                  <span class="fa-stack fa-lg">
+                      <i class="far fa-times-circle" onclick="off()"></i>
+                  </span>
                   </li>
               </ul>
           </div>
+        </div>
+        <div class="info-container">
+          <button class="btn-contact-details" onclick="on()">My Info</button>
+        </div>
       </section>
 
     <!--====================================================
@@ -128,40 +126,63 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
                   <div class=" resume-content mr-auto">
                       <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Senior Web Developer</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                      <p>Contributed majorly to open source projects while leveraging the opportunities that comes with it. Building robust products to meet business requirements.</p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary">March 2019 - Present</span>
+                      <span class="text-primary">March 2020 - Present</span>
                   </div>
                 </div>  
               </div>
               <div class="resume-item col-md-6 col-sm-12">
                 <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
                   <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i>  Web Developer</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                      <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Unclebigbay and Friends</h4>
+                    <p>Contributed in helping to raise and mentor new developers in the Unclebigbay and Friends (Developer's Community) through organizing of Hackathons and Bootcamps.</p>
+                    <p>Written blogs on <a href="#">Hashnode</a>, <a href="#">Medium</a> and <a href="#">Dev.to</a> to share my developer's experience.</p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary">December 2018 - March 2019</span>
+                      <span class="text-primary">December 2020 - Present</span>
                   </div>
                 </div>  
               </div>
               <div class="resume-item col-md-6 col-sm-12">
                 <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
                   <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Junior Web Designer</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Jobberman</h4>
+                      <p>Trained on how to use the Six Thinking Hats Model to boost up team spirit, coordination and performance when working with a team and enhancing soft skills.</p>
                   </div>
                   <div class="resume-date text-md-right">
-                      <span class="text-primary">July 2017 - December 2018</span>
+                      <span class="text-primary">July - 2020</span>
+                  </div>
+                </div>  
+              </div>
+              <div class="resume-item col-md-6 col-sm-12">
+                <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Google Digital Skills for Africa</h4>
+                      <p>Trained on Search Engine Optimization (SEO), Google Analytics and the practical use cases in boosting website perfomance when users search with specific keywords.</p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">July - 2020</span>
+                  </div>
+                </div>  
+              </div>
+              <div class="resume-item col-md-6 col-sm-12">
+                <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> National Youth Service Corps (NYSC)</h4>
+                      <p>Contributed to community development in Ebonyi State, Nigeria, through teaching of academic subjects like Mathematics and Physics. The students performance improved by 70%.</p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">November - 2020</span>
                   </div>
                 </div>  
               </div>
               <div class="resume-item col-md-6 col-sm-12">
                 <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
                   <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Web Design Intern</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Junior Web Designer</h4>
+                      <p>Built products that are mobile responsive with HTML, CSS and JavaScript.</p>
                   </div>
                   <div class="resume-date text-md-right">
                       <span class="text-primary">September 2018 - June 2019</span>
@@ -891,37 +912,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <script src="js/counter/jquery.waypoints.min.js"></script>
     <script src="js/counter/jquery.counterup.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-        $(document).ready(function(){
-
-        $(".filter-b").click(function(){
-            var value = $(this).attr('data-filter');
-            if(value == "all")
-            { 
-                $('.filter').show('1000');
-            }
-            else
-            { 
-                $(".filter").not('.'+value).hide('3000');
-                $('.filter').filter('.'+value).show('3000');
-            }
-        });
-        
-        if ($(".filter-b").removeClass("active")) {
-          $(this).removeClass("active");
-        }
-        $(this).addClass("active");
-        });
-
-        // SKILLS
-        $(function () {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 2000
-            });
-
-        });
-    </script> 
+    <script src="js/index.js"></script> 
 </body>
-
 </html>

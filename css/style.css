@@ -245,7 +245,7 @@ a:active {
     position: fixed;
     display: none;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #212529;
     z-index: 9999;
     cursor: pointer;
     padding: 12px;
@@ -365,6 +365,50 @@ a:active {
 
 #portfolio * {
     z-index: 2;
+}
+
+@media (max-width: 766px) {
+    #overlay {
+        padding: 5px;
+        width: 70%;
+        margin: 0 auto;
+        background-color: #212529;
+    }
+
+    .far,
+    .fab {
+        font-size: 1rem;
+    }
+
+    .fab:hover {
+        color: #2196f3;
+    }
+
+    #my-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .name {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+    .last-item:last-child {
+        bottom: 8px;
+        right: -8px;
+    }
+
+    .subheading,
+    .description {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 767px) {

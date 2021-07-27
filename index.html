@@ -378,30 +378,34 @@
                           CONTACT
     ======================================================-->       
       <section class="resume-section p-3 p-lg-5 d-flex flex-column">
-        <form action="/send_email" method="POST">
+        <form action="POST" data-netlify="true">
           <div class="row my-auto" id="contact"> 
             <div class="col-md-8">
               <div class="contact-cont">
                 <h3>Contact Me</h3>
                 <div class="heading-border-light"></div>
-                <p>Fill the form to get immediate reply within few minutes</p>
+                <p>Please fill the form below</p>
               </div>   
               <div class="row con-form">
                 <div class="col-md-12">
-                  <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="form-control" autocomplete="off" required>
+                  <input type="text" name="name" id="name" placeholder="Full Name" class="form-control" autocomplete="off" required>
                 </div>
                 <div class="col-md-12">
-                  <input type="text" name="email" id="email" placeholder="Email" class="form-control" autocomplete="off" required>
+                  <input type="email" name="email" id="email" placeholder="Email" class="form-control" autocomplete="off" required>
                 </div>
                 <div class="col-md-12">
                   <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control" autocomplete="off" required>
                 </div>
                 <div class="col-md-12"><textarea name="message" id="message" placeholder="Message body..." required></textarea>
-                  <label for="attachment">(Optional)</label>
-                  <input id="attachment" name="attachment" type="file"/>
+                  <label for="myfile">(Optional)</label>
+                  <input id="myfile" name="myfile" type="file"/>
                 </div>
-                <div class="col-md-12 sub-but">
-                  <button type="submit" class="btn btn-general btn-white" role="button">Send</button></div>
+                <div class="col-md-12 mt-3 mb-2">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <div class="col-md-12 mt-3 sub-but">
+                  <button type="submit" class="btn btn-general btn-white" role="button">Send</button>
+                </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-12 mt-5"> 
@@ -905,7 +909,6 @@
             </div>
         </div>
     </div>    
-
 
     <!-- Global javascript -->
     <script src="js/jquery/jquery.min.js"></script>

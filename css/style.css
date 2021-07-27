@@ -370,8 +370,7 @@ a:active {
 @media (max-width: 766px) {
     #overlay {
         padding: 5px;
-        width: 70%;
-        margin: 0 auto;
+        width: 90%;
         background-color: #212529;
     }
 

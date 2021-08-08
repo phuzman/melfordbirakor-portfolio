@@ -549,7 +549,7 @@ a:active {
     margin-top: 0;
 }
 
-.skill-item > i.fab, i.fas {
+.skill-item > i.fab, i.fas.fa-pen-nib {
     font-size: 2rem;
 }
 
